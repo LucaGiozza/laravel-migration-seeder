@@ -17,10 +17,10 @@ class CreateTripsTable extends Migration
             $table->id();
             $table->string('agenzia', 100);
             $table->string('durata_viaggio', 50);
-            $table->float('prezzo', 7, 2);
+            $table->float('prezzo', 7,2);
             $table->string('destinazione',100);
-            $table->string('disponibilità',);
-            $table->float('numero_viaggio', 8, 2 );
+            // $table->string('numero_rimborso', 30);
+            $table->float('numero_viaggio', 8,2 );
             $table->text('description');
             $table->timestamps();
         });
@@ -33,6 +33,7 @@ class CreateTripsTable extends Migration
      * @return void
      */
     public function down()
+
     {
         Schema::dropIfExists('trips');
     }
