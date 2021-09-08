@@ -20,7 +20,7 @@ class CreateTripsTable extends Migration
             $table->float('prezzo', 7, 2);
             $table->string('destinazione',100);
             $table->string('disponibilità',);
-            $table->float('numero_viaggio', 9, 2 );
+            $table->float('numero_viaggio', 8, 2 );
             $table->text('description');
             $table->timestamps();
         });
